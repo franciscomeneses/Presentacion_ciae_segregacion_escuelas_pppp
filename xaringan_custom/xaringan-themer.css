@@ -29,7 +29,7 @@ body {
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: normal;
-  color: #E87616;
+  color: #3c8089;
 }
 .remark-slide-content {
   background-color: #FFF;
@@ -82,7 +82,7 @@ a, a > code {
   background-color: #268bd240;
 }
 .inverse {
-  background-color: #E87616;
+  background-color: #3c8089;
   color: #fdf6e3;
 
 }
@@ -117,7 +117,7 @@ a, a > code {
   color: #fdf6e3;
 }
 .title-slide {
-  background-color: #DA920A;
+  background-color: #3c8089;
 
 }
 .title-slide .remark-slide-number {
@@ -159,7 +159,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #cb4b16;
+  border-left: solid 5px #3c8089;
   padding-left: 1em;
 }
 

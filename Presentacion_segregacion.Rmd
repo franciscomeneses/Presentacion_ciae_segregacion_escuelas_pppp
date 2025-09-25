@@ -328,7 +328,7 @@ class: inverse, middle, center, slideInRight
 
 __Unidad de análisis__: Escuelas agregadas en comunas
 
-__Variable dependiente:__ Contribución de cada escuela a la segregación del país. Mide cuan sub y sobrerrepresentados se encuentra cada uno de los 5 grupos de NSE
+__Variable dependiente:__ Segregación local, contribución de cada escuela a la segregación del país. Mide cuan sub y sobrerrepresentados se encuentra cada uno de los 5 grupos de NSE
 
 
 __Variables independientes de iteres:__ 
@@ -351,7 +351,7 @@ Fin al copago: ha sido paulatino.
 
 ---
 
-# Contribución de la escela a la segregación
+# Contribución de la escela a la segregación (sl)
 
 * La variable fue recodificada para ir de 0 a 100
 
@@ -456,18 +456,35 @@ class: inverse, middle, center, slideInRight
 
 .small[
 
-**Tabla 1: Evidencia de invarianza longitudinal, ajustes y diferencias en los ajustes - cuarto grado**
-
-| Modelo                | n      | χ2 (gl)   | p-value (χ2) | RMSEA | CFI  | Δχ2        | ΔRMSEA | ΔCFI  |
-|------------------------|--------|-----------|--------------|-------|------|------------|--------|-------|
-| Invarianza (agrupada) | 350339 | 1949 (22) | <0.001       | 0.021 | 0.999| -          | -      | -     |
-| Invarianza escalar     | 350339 | 1949 (44) | <0.001       | 0.015 | 0.999| <0.01      | 0.006  | <0.001|
-| Invarianza estricta    | 350339 | 10103 (77)| <0.001       | 0.026 | 0.996| 8154.1***  | 0.011  | 0.003 |
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+load(file="images/invariance_table_4b.RData")
+library(kableExtra)
+fit_indices %>% kbl(caption = "Tabla 1: Evidencia de invarianza longitudinal, ajustes y diferencias en los ajustes - cuarto grado") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
 
 
 ]
 
 ---
+# Anexo 2:  Formula segregación local
 
 
-
+<div style="text-align:center;">
+  <math display="block">
+    <msub><mi>L</mi><mi>u</mi></msub>
+    <mo>=</mo>
+    <munderover>
+      <mo>&#8721;</mo>
+      <mrow><mi>g</mi><mo>=</mo><mn>1</mn></mrow>
+      <mi>G</mi>
+    </munderover>
+    <msub><mi>p</mi><mrow><mi>g</mi><mo>|</mo><mi>u</mi></mrow></msub>
+    <mo>&#x2062;</mo><!-- invisible times -->
+    <mi>log</mi>
+    <mfrac>
+      <msub><mi>p</mi><mrow><mi>g</mi><mo>|</mo><mi>u</mi></mrow></msub>
+      <msub><mi>p</mi><mrow><mo>&#183;</mo><mi>g</mi></mrow></msub>
+    </mfrac>
+  </math>
+</div>

@@ -6,6 +6,8 @@
     <meta name="author" content="Juan Pablo Valenzuela - Francisco Meneses" />
     <meta name="date" content="2025-09-25" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan_custom/xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -311,7 +313,7 @@ class: inverse, middle, center, slideInRight
 
 __Unidad de análisis__: Escuelas agregadas en comunas
 
-__Variable dependiente:__ Contribución de cada escuela a la segregación del país. Mide cuan sub y sobrerrepresentados se encuentra cada uno de los 5 grupos de NSE
+__Variable dependiente:__ Segregación local, contribución de cada escuela a la segregación del país. Mide cuan sub y sobrerrepresentados se encuentra cada uno de los 5 grupos de NSE
 
 
 __Variables independientes de iteres:__ 
@@ -334,7 +336,7 @@ Fin al copago: ha sido paulatino.
 
 ---
 
-# Contribución de la escela a la segregación
+# Contribución de la escela a la segregación (sl)
 
 * La variable fue recodificada para ir de 0 a 100
 
@@ -439,21 +441,93 @@ class: inverse, middle, center, slideInRight
 
 .small[
 
-**Tabla 1: Evidencia de invarianza longitudinal, ajustes y diferencias en los ajustes - cuarto grado**
-
-| Modelo                | n      | χ2 (gl)   | p-value (χ2) | RMSEA | CFI  | Δχ2        | ΔRMSEA | ΔCFI  |
-|------------------------|--------|-----------|--------------|-------|------|------------|--------|-------|
-| Invarianza (agrupada) | 350339 | 1949 (22) | &lt;0.001       | 0.021 | 0.999| -          | -      | -     |
-| Invarianza escalar     | 350339 | 1949 (44) | &lt;0.001       | 0.015 | 0.999| &lt;0.01      | 0.006  | &lt;0.001|
-| Invarianza estricta    | 350339 | 10103 (77)| &lt;0.001       | 0.026 | 0.996| 8154.1***  | 0.011  | 0.003 |
+&lt;table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;Tabla 1: Evidencia de invarianza longitudinal, ajustes y diferencias en los ajustes - cuarto grado&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; modelo &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cfi &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; rmsea &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; srmr &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; delta_cfi &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; delta_rmsea &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; delta_srmr &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; basico &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0000000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00000000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.022808e-08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; agrupado &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0000000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00000000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.711486e-08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; carga &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9970362 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.04127570 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.748743e-02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0029638 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0412757 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0174874 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; umbrales &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9970462 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.02913732 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.748741e-02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000099 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0121384 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; residuos &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9926745 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.03468626 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.230901e-02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0043717 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0055489 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0051784 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 
 ]
 
 ---
+# Anexo 2:  Formula segregación local
 
 
-
+&lt;div style="text-align:center;"&gt;
+  &lt;math display="block"&gt;
+    &lt;msub&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/msub&gt;
+    &lt;mo&gt;=&lt;/mo&gt;
+    &lt;munderover&gt;
+      &lt;mo&gt;&amp;#8721;&lt;/mo&gt;
+      &lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;
+      &lt;mi&gt;G&lt;/mi&gt;
+    &lt;/munderover&gt;
+    &lt;msub&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;|&lt;/mo&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;
+    &lt;mo&gt;&amp;#x2062;&lt;/mo&gt;&lt;!-- invisible times --&gt;
+    &lt;mi&gt;log&lt;/mi&gt;
+    &lt;mfrac&gt;
+      &lt;msub&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo&gt;|&lt;/mo&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;
+      &lt;msub&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;&amp;#183;&lt;/mo&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;
+    &lt;/mfrac&gt;
+  &lt;/math&gt;
+&lt;/div&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
