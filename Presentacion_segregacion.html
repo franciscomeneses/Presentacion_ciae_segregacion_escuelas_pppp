@@ -92,9 +92,9 @@ class: inverse, middle, center, slideInRight
 # Desigualdad en el acceso al mejoramiento educativo
 
 
-* El mejoramiento escolar es sumamente complejo y dificil de sostener, y un factor clave son liderazgos y los buenos docentes
+* El mejoramiento escolar es sumamente complejo y difícil de sostener, y un factor clave son liderazgos y los buenos docentes
 
-* la segregación __dificulta la atracción__ y retención de talentos docentes y directivos en sectores marginados  [(Rumberger &amp; Palardy, 2005)](https://doi.org/10.1177/016146810510700905) 
+* la segregación __dificulta la atracción__ y retención de talentos docentes y directivos en sectores marginados [(Rumberger &amp; Palardy, 2005)](https://doi.org/10.1177/016146810510700905) 
 
 
 &lt;div style="text-align:center;"&gt;
@@ -115,7 +115,9 @@ class: inverse, middle, center, slideInRight
     + La SEP es un intento, positivo, pero monetariamente insuficiente.
 
 
-* Paises con mayores niveles de segregación educativa logran peores resultados educativos
+* Países con mayores niveles de segregación educativa logran peores resultados educativos
+
+    + _Las ganancias de unos no compensan la perdida de la mayoría_
 
 
 ---
@@ -124,7 +126,7 @@ class: inverse, middle, center, slideInRight
 
 * Dificulta la posibilidad de convivir con otros  
 
-* Afecta las competencias civicas [(Janmaat, 2011)](https://doi.org/10.1177/0268580910393044)
+* Afecta las competencias cívicas [(Janmaat, 2011)](https://doi.org/10.1177/0268580910393044)
 
 * Dificulta la tolerancia a la diversidad [(Caro &amp; Schulz 2012)](https://doi.org/10.2304/csee.2012.11.3.21) 
 
@@ -144,12 +146,12 @@ class: inverse, middle, center, slideInRight
 
 ---
 
-# La segregación Chilena en perspectiva
+# La segregación chilena en perspectiva
 
 
-* En los 2000 Chile tenia un Indice de Duncan de 0.6
+* En los 2000 Chile tenía un indice de Duncan de 0.6
   
-  + Considerado tecnicamente como __hipersegregado__
+  + Considerado técnicamente como __hiper-segregado__
 
 *  En Chile (2006) vs OCDE:
 
@@ -158,7 +160,7 @@ class: inverse, middle, center, slideInRight
     + Grupos ricos → 42% más segregados
 
 
-* En comparación con otros paises de la región Chile se mantiene en el top de de segregación
+* En comparación con otros países de la región Chile se mantiene en el top de de segregación
 
 
 
@@ -171,17 +173,17 @@ class: inverse, middle, center, slideInRight
 
 ---
 
-# ¿Qué ha influido en la segregación Chilena?: 
+# ¿Qué ha influido en la segregación chilena?: 
 
  * La segregación residencial 
  
  * Competencia entre escuelas: estudiantes con buen SIMCE 
  
- * Barreras economicas de entrada
+ * Barreras económicas de entrada
  
- * Desiciones familiares
+ * Decisiones familiares
  
- * Practicas selectivas:
+ * Prácticas selectivas:
  
       + Pruebas cognitivas de selección
       
@@ -206,7 +208,7 @@ class: inverse, middle, center, slideInRight
  * La Ley del 15% (2006)
 
     
- * La Ley SEP - Subensión Escolar Preferencial (2008)
+ * La Ley SEP - Subvención Escolar Preferencial (2008)
  
 
  * Ley de Inclusión (2015)
@@ -215,14 +217,14 @@ class: inverse, middle, center, slideInRight
     
     +  Fin al financiamiento compartido 
     
-    +  Fin a la selección -  Sistema de admisión escolar SAE 
+    +  Fin a la selección - Sistema de admisión escolar SAE 
 
 ---
 
 class: inverse, middle, center, slideInRight
 
 
-# ¿Cúal ha sido el efecto de estas politicas en la disminución de la segregación?
+# ¿Cuál ha sido el efecto de estas políticas en la disminución de la segregación?
 
 ---
 
@@ -232,16 +234,16 @@ class: inverse, middle, center, slideInRight
 
 * __Variables__: 
   
-  + _Quintiles de NSE_:  Mediante Analisis Factorial Confirmatorio (AFC) creamos un indice comparable en el tiempo con el cual construimos quintiles socioecnomicos.  
+  + _Quintiles de NSE_:  Mediante Análisis Factorial Confirmatorio (AFC) creamos un índice comparable en el tiempo con el cual construimos quintiles socioeconómicos.  
   
-  + _La segregación_ Para medir la segregación utilizamos el _Indice de entropia de Theil_
+  + Segregación: utilizamos el _Índice de entropia de Theil_, mediante el paquete `\(segregation\)` de Rstudio [(Elber, 2023)](https://elbersb.github.io/segregation/articles/segregation.html)
 
 
 *  __Métodos__: 
 
-    * Analisis descriptivo: Indice de Theil 
+    * Análisis descriptivo: Índice M corregido de Theil [(Elber, 2021)](https://journals.sagepub.com/doi/10.1177/0049124121986204)
     
-    * Regressions multinivel de escuelas anidadas en comunas
+    * Regresiones multinivel de escuelas anidadas en comunas
     
 ???
 
@@ -282,6 +284,8 @@ class: inverse, middle, center, slideInRight
 
 ???
 
+*  Fijamos a valor del 2002 como el "100" para hacer una medida comparable.
+
 * La historia de los tres periodos
 
     + El aumento
@@ -291,6 +295,9 @@ class: inverse, middle, center, slideInRight
     + La Caida
  
 * Ahora bien, no sabemos a que se deben estos cambios. LyD lo dijo claramente.  
+
+
+
  }
  
 ---
@@ -304,18 +311,18 @@ class: inverse, middle, center, slideInRight
 
 __Unidad de análisis__: Escuelas agregadas en comunas
 
-__Variable dependiente:__ Contribución de cada escuela a la segregación del pais. Mide cuan sub y sobrerepresentados se encuentra cada uno de los 5 grupos de NSE
+__Variable dependiente:__ Contribución de cada escuela a la segregación del país. Mide cuan sub y sobrerrepresentados se encuentra cada uno de los 5 grupos de NSE
 
 
 __Variables independientes de iteres:__ 
 
 * Años
-* Politicas publicas
-  + __SEP__ Adscripcion de la escuela a la SEP  (Si/No)
+* Políticas públicas
+  + __SEP__ Adscripción de la escuela a la SEP  (Si/No)
   + __SAE__ porcentaje de estudiantes que ingresaron por SAE (%)
   + __Fin copago__ con o sin copago, distinguiendo monto  ($)
 
-__controles:__ segregacion territorial, Cantidad de estudiantes
+__controles:__ segregación territorial, Cantidad de estudiantes
 
 ???
 
@@ -329,21 +336,39 @@ Fin al copago: ha sido paulatino.
 
 # Contribución de la escela a la segregación
 
-* La variable va de 0 a 100
+* La variable fue recodificada para ir de 0 a 100
 
 * __0%__:
-    + significa que todos los quintiles estan igual de representados (20% de cada quintil)
+    + significa que todos los quintiles están igual de representados (~20% de cada quintil)
 
 * __100%__
-    + que la escuela solo tiene estudiantes de un quintil en particular (20% de cada quintil)
+    + que la escuela solo tiene estudiantes de un quintil en particular (ej. 100% del Q5)
     
 * __Valores Intermedios__:
-    + Algunos grupos estan sobrerepresentados y otros subrepresentados.
+    + Algunos grupos están sobrerrepresentados y otros subrepresentados.
 
 ---
 
 &lt;iframe src="images/model_2m_segregation_dca_0to100.html" width="100%" height="600px" style="border:none;"&gt;&lt;/iframe&gt;
 
+
+???
+
+Analisemos por parte  
+
+#  Tendencia historica
+
+* vemos un aumento en el primer periodo que se mantiene significativo hasta 2014
+
+* ahi alcanzamos los niveles del 2001
+
+* Del 2022 se observan cambios significativos 
+
+# Control redicencial
+
+# Efecto de las politicas
+
+# efecto controlado
 
 ---
 
@@ -352,7 +377,7 @@ Fin al copago: ha sido paulatino.
 
  *  Existe una disminución significativa en el aporte a la segregación de cada escuela
  
- *  El cambio en el tiempo no se exlpica al controlar por la segregación residencial
+ *  El cambio en el tiempo no se explica al controlar por la segregación residencial
  
  *  Sobre las políticas:
       
@@ -364,7 +389,7 @@ Fin al copago: ha sido paulatino.
 
 ---
 
-# En sintesis 
+# En síntesis  
 
 
 * Hay pocos ejemplos en el mundo de desegregación, pero Chile logró revertir la tendencia  (2002-2008).
@@ -375,27 +400,27 @@ Fin al copago: ha sido paulatino.
 
 * Los valores de segregación aún son altos
 
-* La disminución de la segregación se explica más por las políticas que por cambios demograficos
+* La disminución de la segregación se explica más por las políticas que por cambios demográficos
 
 
 
 
 ---
 
-# Discución. 
+# Discusión 
 
  * Existen varios estudios sobre este tema y suelen no encontrar efectos. 
  
       + En general utilizan datos hasta antes del 2020 
       
-      + Tambien utilizan indicadores menos sensibles a los cambios como Duncan 
+      + También utilizan indicadores menos sensibles a los cambios como Duncan 
       
       + Suelen utilizan medidas poco estables de NSE 
       
  
  * Ahora la segregación es ENTRE dependencias  ¿qué hacer? 
  
- * Es importante seguir estudianto la temática
+ * Es importante seguir estudiando la temática
     
      + Efectos de la inclusión: aprendizaje, brechas y convivencia
       
@@ -403,6 +428,8 @@ Fin al copago: ha sido paulatino.
   
 
 ---
+
+class: inverse, middle, center, slideInRight
 
 # Anexos
 
